@@ -6,7 +6,7 @@ import tornado.httpserver
 
 class IndexHandler(tornado.web.RequestHandler):
     def get(self, *args, **kwargs):
-        self.write("sunck is a good man")
+        self.write("ccx is a good company")
 
 
 if __name__ == "__main__":
