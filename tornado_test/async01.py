@@ -20,7 +20,7 @@ def finish(data):
     print("结束处理回调函数")
 
 
-# 一个客户单的请求
+# 一个客户端的请求
 def req_a():
     print("开始处理reqA")
     long_io(finish)

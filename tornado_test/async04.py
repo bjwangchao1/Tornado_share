@@ -8,7 +8,7 @@ def genCoroutine(func):
         gen2 = next(gen1)  # longIo的生成器
 
         def run(g):
-            res = next(g)
+            res = next(g)  # res 就是 ccx is a good company
             try:
                 gen1.send(res)  # 返回给reqA数据
             except StopIteration as e:
@@ -33,7 +33,6 @@ def long_io():
 def req_a():
     print("开始处理reqA")
     res = yield long_io()
-    o()
     print("接收到longIo的响应数据：", res)
     print("结束处理reqA")
 

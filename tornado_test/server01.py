@@ -25,7 +25,7 @@ if __name__ == "__main__":
     # Application：是tornado web框架的核心应用类，是与服务器对应的接口
     # 里面保存了路由映射表，有一个listen方法用来创建一个http服务器的实例，并绑定了端口
     app = tornado.web.Application([
-        (r"/", IndexHandler)
+        (r"/mine", IndexHandler)
     ])
     # 绑定监听端口
     # 注意：此时服务器并没有开启监听
